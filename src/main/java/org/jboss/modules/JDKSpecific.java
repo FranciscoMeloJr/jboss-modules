@@ -128,6 +128,8 @@ final class JDKSpecific {
     }
 
     static Package getPackage(ClassLoader cl, String packageName) {
+        if (c1 i== null)
+    		return null;
         try {
             return (Package) getPackageMH.invoke(cl, packageName);
         } catch (RuntimeException | Error e2) {
